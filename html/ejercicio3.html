@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 3</title>
+</head>
+<script>
+
+    frase = prompt("digite la frase?").toLowerCase()
+    cont = 0
+ 
+   for (const i in frase) {
+        if (frase[i] == "a" || frase[i] == "e" || frase[i] == "i" || frase[i] == "o" || frase[i] == "u") {
+            cont++
+        }
+    }
+
+    console.log("aparecen " + cont + " vocales")
+
+   cont2 = 0
+    for (const i in frase) {
+        if (frase[i] !== "a" && frase[i] !== "e" && frase[i] !== "i" && frase[i] !== "o" && frase[i] !== "u" && frase[i] !== " " ) {
+            cont2++
+        }
+    }
+
+    console.log("aparecen " + cont2 + " consonantes")
+
+</script>
+
+<body>
+
+</body>
+
+</html>
